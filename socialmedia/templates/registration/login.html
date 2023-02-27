@@ -1,0 +1,9 @@
+{% if form.errors %}
+  <h1> please enter correct username and password</h1>
+{% endif %}
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.username.label_tag}}{{form.username}}
+    {{form.password.labeltag}}{{form.password}}
+    <input type="submit">
+</form>    

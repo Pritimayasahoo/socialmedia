@@ -1,0 +1,13 @@
+<p>You are now in post.html</p>
+<form method="POST" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="nam">Enter user name:</label>
+    <input type="text" id="nam" name="name">
+    <br>
+    <input type="file" name="post_img">
+    <br>
+    <label for="caption">Write the caption</label>
+    <input type="text" id="caption" name="caption">
+    <input type="submit">
+</form>
+

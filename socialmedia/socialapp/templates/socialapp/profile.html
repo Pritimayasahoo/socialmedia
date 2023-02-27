@@ -1,0 +1,12 @@
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <img width="25" height="25" src="{{user_profile.profileimg.url}}">
+    <input type="file" name="image">
+    <label for="bio">Bio</label>
+    <input type="text" id="bio" name="bio" value={{user_profile.bio}}>
+    <label for="loc">Location</label>
+    <input type="text" id="loc" name="location" value={{user_profile.location}}>
+    <input type="submit">
+</form>    
+
+    

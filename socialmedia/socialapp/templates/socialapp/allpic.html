@@ -1,0 +1,10 @@
+{% for pic in pics %}
+<img width="90" height="80" src="{{pic.img.url}}">
+<br>
+<p>Name is:{{pic.user}}</p>
+<p>caption is:{{pic.caption}}</p>
+<p>LIkes:{{pic.no_of_likes}}</p>
+<a href="/like/?post_id={{pic.id}}">Like</a>
+<br>
+<br>
+{% endfor %}
